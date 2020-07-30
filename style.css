@@ -1,0 +1,300 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-image:linear-gradient(rgb(58, 71, 107) , rgb(5, 39, 61));
+}
+.switcher.day{
+    background-color:rgb(30, 29, 41);
+}
+.togle_button.light_mode{
+    justify-content: flex-end;
+    background-image: linear-gradient( hsl(230, 22%, 74%), hsl(230, 22%, 74%));
+    background-color:hsl(230, 22%, 74%);
+   
+}
+@media only screen and (max-width:600px){
+ main{
+     height: 100vh;
+     margin: 0px auto;
+     width:95%;
+     max-width: 350px;    
+     display:flex;
+     flex-direction:column;
+     align-items: center;
+     justify-content: center;
+ }
+ .image_container{
+     display: none;
+ }
+ .password_box_container{
+    width:95%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+ .password_box{
+     background-color: rgb(30, 30, 56);
+     width:95%;
+     height: 50px;
+     border: 2px solid rgba(18, 230, 245) ;
+     border-radius: 15px;
+     
+ }
+ .password{
+    display:flex;
+    margin-top:6px;
+    
+    /* flex-direction:column; */
+    align-items: center;
+    justify-content: center;
+    font-size:32px;
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+ }
+ .generate{
+     /* position: absolute;
+     top: ;
+     left: ; */
+     font-weight: normal;
+     font-size: 18px;
+    border: 0px;
+    color: white;
+    width: 50%;
+    height: 40px;
+    margin-top: 15px;
+    border-radius: 50px;
+    background-image: linear-gradient( hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+
+ }
+ .options_container{
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: center;
+     width: 90%;
+     border: 2px solid rgba(8, 193, 206, 0.486);
+     border-radius: 15px;
+     margin-top: 25px;
+     padding:5px;
+ }
+ .options{
+    border: 1px solid red;
+    width:60%;
+    margin-top:20px;
+
+ }
+ .div_heading{
+     font-size: 15px;
+     color: rgba(255, 255, 255, 0.884);
+     font-weight: lighter;
+     /* border: 1px solid white; */
+     margin: 4px;
+ }
+ .option_box{
+     width: 90%;
+     display: flex;
+     justify-content:space-between;
+     align-items: center;
+     /* border: 1px solid white; */
+     border-radius: 8px;
+     margin-bottom:20px;
+     padding:3px 7px;
+     background-color: rgb(6, 28, 43);
+   
+ }
+ .option_tag{
+     color: rgba(255, 255, 255, 0.658);
+     font-size: 16px;
+     font-weight: normal;
+     padding: 0px;
+     margin:10px 0px;
+
+ }
+ /* toggle section */
+ .toggle_container{
+    display:flex;
+    justify-content:space-between;
+    align-content:center;
+    /* border: 1px solid white; */
+    width:18%;
+    /* margin:0px auto 90px auto; */
+    /* padding:0px 10px ; */
+
+    
+
+}
+.togle_button{
+    height:18px;
+    /* margin-top:10px; */
+    display: flex;
+    justify-content:start;
+    align-items:baseline;
+    border-radius:50px;
+    border: 0px;
+    cursor: pointer;
+    width:3.5em;
+    padding:3px;
+    background-image: linear-gradient( hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+
+.switcher{
+    transition:  1s;
+    width: 1.2em;
+    height:100%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 50%;
+    transition: 300ms ease-in;
+}
+
+
+}
+@media only screen and (min-width:600px){
+    main{
+        height:700px;
+        margin: 0px auto;
+        width:65%;
+        max-width: 800px;
+        display:flex;
+        flex-wrap: wrap;
+        /* flex-direction:column; */
+        align-items: center;
+        justify-content:space-around;
+        background-color: rgba(6, 28, 43, 0.315);
+   
+    } 
+    .image_container{
+        width:60%;
+
+    }
+    .image{
+        width: 100%;
+    }
+    .password_box_container{
+        width:40%;
+        min-width:320px;
+        /* border: 1px solid red;
+        margin-bottom: 0px; */
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+     .password_box{
+        background-color: rgb(6, 28, 43);
+   
+         width:95%;
+         height: 50px;
+         border: 2px solid rgba(18, 230, 245) ;
+         border-radius: 15px;
+         
+     }
+     .password{
+        display:flex;
+        margin-top:6px;
+        
+        /* flex-direction:column; */
+        align-items: center;
+        justify-content: center;
+        font-size:32px;
+        font-family: sans-serif;
+        color: rgb(255, 255, 255);
+     }
+.generate{
+    min-width: 150px;
+    /* position: absolute; */
+    font-weight: normal;
+    font-size: 18px;
+   border: 0px;
+   color: white;
+   width:8%;
+   /* top:57%;
+   left: 28%; */
+   height: 40px;
+   margin-top: 15px;
+   border-radius: 50px;
+   background-image: linear-gradient( hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+
+}
+.options_container{
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 40%;
+    border: 2px solid rgba(8, 193, 206, 0.486);
+    border-radius: 15px;
+    margin-top: 25px;
+    padding:5px;
+}
+.options{
+    border: 1px solid red;
+    width:60%;
+    margin-top:20px;
+
+ }
+ .div_heading{
+     font-size: 15px;
+     color: rgba(255, 255, 255, 0.884);
+     font-weight: lighter;
+     /* border: 1px solid white; */
+     margin: 4px;
+ }
+ .option_box{
+     width: 90%;
+     display: flex;
+     justify-content:space-between;
+     align-items: center;
+     /* border: 1px solid white; */
+     border-radius: 8px;
+     margin-bottom:20px;
+     padding:3px 7px;
+     background-color: rgb(6, 28, 43);
+   
+ }
+ .option_tag{
+     color: rgba(255, 255, 255, 0.658);
+     font-size: 16px;
+     font-weight: normal;
+     padding: 0px;
+     margin:10px 0px;
+
+ }
+ /* toggle section */
+ .toggle_container{
+    display:flex;
+    justify-content:space-between;
+    align-content:center;
+    /* border: 1px solid white; */
+    width:18%;
+    /* margin:0px auto 90px auto; */
+    /* padding:0px 10px ; */
+
+    
+
+}
+.togle_button{
+    height:18px;
+    /* margin-top:10px; */
+    display: flex;
+    justify-content:start;
+    align-items:baseline;
+    border-radius:50px;
+    border: 0px;
+    cursor: pointer;
+    width:3.5em;
+    padding:3px;
+    background-image: linear-gradient( hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+
+.switcher{
+    transition:  1s;
+    width: 1.2em;
+    height:100%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 50%;
+    transition: 300ms ease-in;
+}
+}
